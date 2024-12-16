@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.block.ModBlocks;
 import com.example.examplemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -50,6 +51,7 @@ public class ExampleMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -69,6 +71,10 @@ public class ExampleMod
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RATATIN);
             event.accept(ModItems.SKIBIDI_TOILET);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ARROBA_BLOCK);
         }
     }
 
