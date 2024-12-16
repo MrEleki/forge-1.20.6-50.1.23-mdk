@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -33,7 +34,7 @@ import org.slf4j.Logger;
 public class ExampleMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "firstmod";
+    public static final String MOD_ID = "examplemod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -47,6 +48,8 @@ public class ExampleMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -63,7 +66,10 @@ public class ExampleMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.RATATIN);
+            event.accept(ModItems.SKIBIDI_TOILET);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
