@@ -61,6 +61,7 @@ public class ExampleMod
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RATATIN);
             event.accept(ModItems.SKIBIDI_TOILET);
+            event.accept(ModItems.CHAINMAIL);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){

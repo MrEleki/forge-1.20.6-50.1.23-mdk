@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":{
+    "A": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "B": {
+      "item": "minecraft:leather"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BCB",
+    "A A"
+  ],
+  "result":{
+    "count": 1,
+    "id": "examplemod:ratatin"
+  }
+}

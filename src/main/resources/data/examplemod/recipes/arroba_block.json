@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":{
+    "A": {
+      "item": "examplemod:ratatin"
+    },
+    "B": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "result":{
+    "count": 1,
+    "id": "examplemod:arroba_block"
+  }
+}
