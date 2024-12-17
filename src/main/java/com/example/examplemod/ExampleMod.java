@@ -75,6 +75,7 @@ public class ExampleMod
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ARROBA_BLOCK);
+            event.accept(ModBlocks.DOS_BLOCK);
         }
     }
 

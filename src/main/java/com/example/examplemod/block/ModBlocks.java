@@ -23,7 +23,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()
                     .sound(SoundType.GLASS)));
 
-
+    public static final RegistryObject<Block> DOS_BLOCK = registerBlock("dos_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()
+                    .sound(SoundType.ANVIL).friction(4f)));
 
 
 
