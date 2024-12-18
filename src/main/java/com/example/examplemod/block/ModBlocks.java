@@ -2,11 +2,14 @@ package com.example.examplemod.block;
 
 import com.example.examplemod.ExampleMod;
 import com.example.examplemod.item.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.client.model.obj.ObjMaterialLibrary;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,12 +23,12 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> ARROBA_BLOCK = registerBlock("arroba_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
                     .sound(SoundType.GLASS)));
 
     public static final RegistryObject<Block> DOS_BLOCK = registerBlock("dos_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()
-                    .sound(SoundType.ANVIL).friction(4f)));
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
+                    .sound(SoundType.ANVIL).friction(2f)));
 
 
 

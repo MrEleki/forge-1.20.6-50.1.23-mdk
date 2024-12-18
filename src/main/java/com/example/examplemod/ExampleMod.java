@@ -43,6 +43,7 @@ public class ExampleMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -62,6 +63,7 @@ public class ExampleMod
             event.accept(ModItems.RATATIN);
             event.accept(ModItems.SKIBIDI_TOILET);
             event.accept(ModItems.CHAINMAIL);
+            event.accept(ModItems.OCEAN_ROD);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){

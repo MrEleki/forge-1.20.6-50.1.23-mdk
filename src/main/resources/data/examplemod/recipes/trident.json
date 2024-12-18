@@ -2,17 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "#": {
+      "item": "examplemod:ocean_rod"
+    },
     "X": {
-      "item": "examplemod:chainmail"
+      "item": "minecraft:prismarine_crystals"
     }
   },
   "pattern": [
     "XXX",
-    "X X",
-    "X X"
+    "###",
+    " # "
   ],
   "result": {
     "count": 1,
-    "id": "minecraft:chainmail_leggings"
+    "id": "minecraft:trident"
   }
 }

@@ -21,6 +21,9 @@ public class ModItems {
     public static final RegistryObject<Item> CHAINMAIL = ITEMS.register("chainmail",
             () -> new Item (new Item.Properties()));
 
+    public static final RegistryObject<Item> OCEAN_ROD = ITEMS.register("ocean_rod",
+            () -> new Item (new Item.Properties()));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
