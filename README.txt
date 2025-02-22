@@ -1,4 +1,4 @@
-mod pendejo que hice para ponerme a hacer algo con mi vida
+mod que hice para ponerme a hacer algo con mi vida (al final ni lo continué XD q lata usar java)
 
 _________________________________________________________________
 AÑADIDOS
